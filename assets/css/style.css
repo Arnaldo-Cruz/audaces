@@ -8,19 +8,43 @@
 body{color:#222;}
 a{text-decoration:none;color:inherit;}
 
+/* HERO WRAPPER (fundo verde unificado) */
+.hero-wrapper{
+  background:linear-gradient(135deg,var(--verde-escuro),var(--verde));
+  color:var(--branco);
+}
+
 /* HEADER */
 header{
-  background:linear-gradient(135deg,var(--verde-escuro),var(--verde));
+  background:transparent;
   color:var(--branco);
   padding:20px 5%;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
-.logo{display:flex;align-items:center;gap:10px;font-weight:bold;font-size:1.3rem;}
-.logo span{display:block;font-size:0.7rem;font-weight:normal;opacity:0.8;}
-nav ul{display:flex;gap:25px;list-style:none;}
-nav ul li a{color:var(--branco);font-size:0.95rem;}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:bold;
+  font-size:1.3rem;
+}
+.logo span{
+  display:block;
+  font-size:0.7rem;
+  font-weight:normal;
+  opacity:0.8;
+}
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+nav ul li a{
+  color:var(--branco);
+  font-size:0.95rem;
+}
 .btn-associe{
   background:var(--dourado);
   color:#222;
@@ -45,12 +69,15 @@ nav ul li a{color:var(--branco);font-size:0.95rem;}
 }
 .hero-text h1{
   font-size:2.8rem;
-  color:var(--verde-escuro);
+  color:var(--branco);
   line-height:1.2;
   margin-bottom:20px;
 }
+.hero-text h1 .highlight{
+  color:var(--dourado);
+}
 .hero-text p{
-  color:#555;
+  color:rgba(255,255,255,0.85);
   font-size:1.05rem;
   line-height:1.6;
   margin-bottom:30px;
@@ -70,28 +97,27 @@ nav ul li a{color:var(--branco);font-size:0.95rem;}
   transition:0.3s;
 }
 .btn-primary:hover{
-  background:var(--verde);
-  color:#fff;
+  background:var(--branco);
+  color:var(--verde-escuro);
 }
 .btn-secondary{
   background:transparent;
-  color:var(--verde-escuro);
-  border:2px solid var(--verde-escuro);
+  color:var(--branco);
+  border:2px solid var(--branco);
   padding:12px 24px;
   border-radius:25px;
   font-weight:bold;
   transition:0.3s;
 }
 .btn-secondary:hover{
-  background:var(--verde-escuro);
-  color:#fff;
+  background:var(--branco);
+  color:var(--verde-escuro);
 }
 .hero-img{
   flex:1;
   min-width:280px;
   position:relative;
   padding:20px;
-  background:radial-gradient(circle, rgba(28,92,69,0.15) 0%, transparent 70%);
   border-radius:50%;
 }
 .hero-img img{
