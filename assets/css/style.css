@@ -30,59 +30,25 @@ nav ul li a{color:var(--branco);font-size:0.95rem;}
   margin-left:20px;
 }
 
-/* HERO */
-.hero{
-  background:linear-gradient(135deg,var(--verde-escuro),var(--verde));
-  color:var(--branco);
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  padding:60px 5%;
-  gap:40px;
-}
-.hero-text{flex:1;min-width:300px;}
-.hero-text h1{font-size:3rem;line-height:1.2;font-weight:300;}
-.hero-text h1 strong{color:var(--dourado);font-weight:600;}
-.hero-text p{margin:20px 0 30px;font-size:1.05rem;opacity:0.9;max-width:450px;}
-.hero-buttons{display:flex;gap:15px;flex-wrap:wrap;}
-.btn-primary{
-  background:var(--dourado);color:#222;padding:14px 28px;
-  border-radius:30px;font-weight:bold;
-}
-.btn-secondary{
-  border:1px solid var(--branco);color:var(--branco);
-  padding:14px 28px;border-radius:30px;font-weight:bold;
-}
-.hero-img{flex:1;min-width:280px;text-align:center;}
-.hero-img img{max-width:100%;border-radius:20px;}
-.hero-img{
-  flex:1;
-  min-width:280px;
-  text-align:center;
-  overflow:hidden; /* evita vazamento nas bordas */
-}
 .hero-img img{
-  display:block;        /* remove espaço inline indesejado */
-  width:100%;            /* força ocupar todo o espaço do container */
+  display:block;
+  width:100%;
   max-width:100%;
   height:auto;
-  object-fit:cover;      /* evita distorção */
+  object-fit:cover;
   border-radius:20px;
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 10%,
-    black 90%,
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 60%,
     transparent 100%
   );
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 10%,
-    black 90%,
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 60%,
     transparent 100%
   );
 }
+
 
 
 /* FEATURES BAR */
