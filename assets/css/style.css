@@ -117,12 +117,8 @@ nav ul li a{
   flex:1;
   min-width:280px;
   position:relative;
-}
-
-.hero-img{
   background: var(--verde-escuro); /* ou --verde, a cor de fundo do hero */
 }
-
 .hero-img img{
   display:block;
   width:100%;
