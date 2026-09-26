@@ -139,7 +139,7 @@ nav ul li a{
     black 85%,
     transparent 100%
   );
-  -webkit-mask-composite: intersect;
+  -webkit-mask-composite: source-in; /* era: intersect */
   mask-image: linear-gradient(
     to right,
     transparent 0%,
