@@ -118,6 +118,7 @@ nav ul li a{
   min-width:280px;
   position:relative;
 }
+
 .hero-img img{
   display:block;
   width:100%;
@@ -125,38 +126,13 @@ nav ul li a{
   height:auto;
   object-fit:cover;
   border-radius:20px;
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 15%,
-    black 85%,
-    transparent 100%
-  ),
-  linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 15%,
-    black 85%,
-    transparent 100%
-  );
-  -webkit-mask-composite: source-in; /* era: intersect */
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 15%,
-    black 85%,
-    transparent 100%
-  ),
-  linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 15%,
-    black 85%,
-    transparent 100%
-  );
-  mask-composite: intersect;
+  -webkit-mask-image: radial-gradient(ellipse 75% 75% at center, black 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 75% at center, black 60%, transparent 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
-
 
 /* FEATURES BAR */
 .features{
